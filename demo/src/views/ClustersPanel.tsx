@@ -46,7 +46,8 @@ const ClustersPanel: FC<{
     <Panel
       title={
         <>
-          <MdGroupWork className="text-muted" /> Clusters
+          <MdGroupWork className="text-muted" /> 
+          Clusters
           {visibleClustersCount < clusters.length ? (
             <span className="text-muted text-small">
               {" "}
