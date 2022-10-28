@@ -5,7 +5,9 @@ function getMouseLayer() {
   return document.querySelector(".sigma-mouse");
 }
 
-const GraphEventsController: FC<{ setHoveredNode: (node: string | null) => void }> = ({ setHoveredNode, children }) => {
+const GraphEventsController: FC<{ 
+  setHoveredNode: (node: string | null) => void
+}> = ({ setHoveredNode, children}) => {
   const sigma = useSigma();
   const graph = sigma.getGraph();
   const registerEvents = useRegisterEvents();
@@ -18,9 +20,46 @@ const GraphEventsController: FC<{ setHoveredNode: (node: string | null) => void 
     registerEvents({
       clickNode({ node }) {
         if (!graph.getNodeAttribute(node, "hidden")) {
-          //window.open(graph.getNodeAttribute(node, "URL"), "_blank");
+          window.open(graph.getNodeAttribute(node, "URL"), "_blank");
+          
+          if (graph.getNodeAttribute(node, "state") === -1) {
+            graph.setNodeAttribute(node, "state", 1)
+          }
+          
+          
+          
+          
+          //graph.setNodeAttribute(node, "hidden", "hidden");
+          
+
+
+          //setHoveredNode(node);
+          //const mouseLayer = getMouseLayer();
+          //if (mouseLayer) mouseLayer.classList.add("mouse-pointer");
         }
       },
+      rightClickNode({ node }) {
+        if (graph.getNodeAttribute(node, "hidden")) {
+          graph.setNodeAttribute(node, "hidden", "");
+          
+          setHoveredNode(null);
+          //const mouseLayer = getMouseLayer();
+          //if (mouseLayer) mouseLayer.classList.remove("mouse-pointer");
+        }
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
       enterNode({ node }) {
         setHoveredNode(node);
         // TODO: Find a better way to get the DOM mouse layer:

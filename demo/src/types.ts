@@ -6,6 +6,7 @@ export interface NodeData {
   cluster: string;
   x: number;
   y: number;
+  state: number;
 }
 
 export interface Cluster {

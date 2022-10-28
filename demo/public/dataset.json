@@ -61,7 +61,7 @@
       "label": "Recommendation",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 0.0,
       "y": 200.0,
       "score": 0.6
@@ -71,7 +71,7 @@
       "label": "Ranking",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 0.0,
       "y": 150.0,
       "score": 0.6
@@ -81,17 +81,17 @@
       "label": "Anomaly Detection",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 0.0,
       "y": 100.0,
       "score": 0.6
     },
     {
-      "key": "Dimensionallity-Reduction",
-      "label": "Dimensionallity Reduction",
+      "key": "Dimensionality-Reduction",
+      "label": "Dimensionality Reduction",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": -250.0,
       "y": 250.0,
       "score": 0.6
@@ -101,7 +101,7 @@
       "label": "Association",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": -250.0,
       "y": 50.0,
       "score": 0.6
@@ -111,7 +111,7 @@
       "label": "Clustering",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": -150.0,
       "y": 35.0,
       "score": 0.6
@@ -121,7 +121,7 @@
       "label": "Ensembling",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 150.0,
       "y": 275.0,
       "score": 0.6
@@ -131,7 +131,7 @@
       "label": "Forecasting",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 275.0,
       "y": 225.0,
       "score": 0.6
@@ -141,7 +141,7 @@
       "label": "Detection",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 275.0,
       "y": 150.0,
       "score": 0.6
@@ -151,7 +151,7 @@
       "label": "Regression",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 275.0,
       "y": 75.0,
       "score": 0.6
@@ -161,24 +161,17 @@
       "label": "Classification",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 150.0,
       "y": 35.0,
       "score": 0.6
     },
-
-
-
-
-
-
-
     {
       "key": "Control",
       "label": "Control",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 275.0,
       "y": -150.0,
       "score": 0.6
@@ -188,7 +181,7 @@
       "label": "Real Time",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 260.0,
       "y": -275.0,
       "score": 0.6
@@ -198,11 +191,56 @@
       "label": "Optimization",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "2",
       "x": 35.0,
       "y": -275.0,
       "score": 0.6
     },
+
+
+
+
+
+
+
+
+
+
+    {
+      "key": "Logistic-Regression",
+      "label": "Logistic Regression",
+      "tag": "Method",
+      "URL": "https://en.wikipedia.org/wiki/Machine-learning",
+      "cluster": "3",
+      "x": 180.0,
+      "y": 35.0,
+      "score": 0.4,
+      "state": -1
+    },
+    {
+      "key": "SVM",
+      "label": "SVM",
+      "tag": "Method",
+      "URL": "https://en.wikipedia.org/wiki/Machine-learning",
+      "cluster": "3",
+      "x": 130.0,
+      "y": 55.0,
+      "score": 0.4,
+      "state": -1
+    },
+    {
+      "key": "Random-Forest-Classifier",
+      "label": "Random Forest Classifier",
+      "tag": "Method",
+      "URL": "https://en.wikipedia.org/wiki/Machine-learning",
+      "cluster": "3",
+      "x": 135.0,
+      "y": 10.0,
+      "score": 0.4,
+      "state": -1
+    },
+
+
 
 
 
@@ -216,10 +254,11 @@
       "label": "test",
       "tag": "Method",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "4",
+      "cluster": "3",
       "x": 350.0,
       "y": 350.0,
-      "score": 0.4
+      "score": 0,
+      "state": 1
     }  
   ],
   "edges": [
@@ -231,7 +270,7 @@
     ["Unsupervised-Learning", "Recommendation"],
     ["Unsupervised-Learning", "Ranking"],
     ["Unsupervised-Learning", "Anomaly-Detection"],
-    ["Unsupervised-Learning", "Dimensionallity-Reduction"],
+    ["Unsupervised-Learning", "Dimensionality-Reduction"],
     ["Unsupervised-Learning", "Association"],
     ["Unsupervised-Learning", "Clustering"],
 
@@ -249,19 +288,30 @@
     ["Reinforcement-Learning", "Classification"],
     ["Reinforcement-Learning", "Control"],
     ["Reinforcement-Learning", "Real-Time"],
-    ["Reinforcement-Learning", "Optimization"]
+    ["Reinforcement-Learning", "Optimization"],
+
+    ["Classification", "Random-Forest-Classifier"],
+    ["Classification", "Logistic-Regression"],
+    ["Classification", "SVM"]
+
+
+
+
+
   ],
   "clusters": [
+    { "key": "-1", "color": "#bbb", "clusterLabel": "Null" },
     { "key": "0", "color": "#6c3e81", "clusterLabel": "Graph theory" },
-    { "key": "1", "color": "#666666", "clusterLabel": "Spreadsheets" },
-    { "key": "3", "color": "#57a835", "clusterLabel": "Logic of information" },
+    { "key": "1", "color": "#5f83cc", "clusterLabel": "Spreadsheets" },
+    { "key": "2", "color": "#57a835", "clusterLabel": "Test" },
+    { "key": "3", "color": "#666666", "clusterLabel": "Logic of information" },
     { "key": "4", "color": "#7145cd", "clusterLabel": "Trees and data structures" },
     { "key": "5", "color": "#579f5f", "clusterLabel": "Business intelligence" },
     { "key": "6", "color": "#d043c4", "clusterLabel": "Exploratory data analysis" },
     { "key": "7", "color": "#477028", "clusterLabel": "Softwares and data mining" },
     { "key": "8", "color": "#b174cb", "clusterLabel": "Project management" },
     { "key": "10", "color": "#a4923a", "clusterLabel": "Engineering" },
-    { "key": "11", "color": "#5f83cc", "clusterLabel": "Semantic networks" },
+    { "key": "11", "color": "#666666", "clusterLabel": "Semantic networks" },
     { "key": "12", "color": "#666666", "clusterLabel": "Sociometry" },
     { "key": "13", "color": "#666666", "clusterLabel": "Ideas and concepts" },
     { "key": "14", "color": "#db4139", "clusterLabel": "Arguments / Logic" },
@@ -278,6 +328,7 @@
     { "key": "25", "color": "#666666", "clusterLabel": "Knots" }
   ],
   "tags": [
+    { "key": "unknown", "image": "unknown.svg" },
     { "key": "Chart type", "image": "charttype.svg" },
     { "key": "Company", "image": "company.svg" },
     { "key": "Concept", "image": "concept.svg" },
@@ -287,7 +338,6 @@
     { "key": "Organization", "image": "organization.svg" },
     { "key": "Person", "image": "person.svg" },
     { "key": "Technology", "image": "technology.svg" },
-    { "key": "Tool", "image": "tool.svg" },
-    { "key": "unknown", "image": "unknown.svg" }
+    { "key": "Tool", "image": "tool.svg" }
   ]
 }

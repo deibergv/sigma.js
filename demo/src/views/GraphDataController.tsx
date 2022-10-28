@@ -17,13 +17,33 @@ const GraphDataController: FC<{ dataset: Dataset; filters: FiltersState }> = ({ 
     const clusters = keyBy(dataset.clusters, "key");
     const tags = keyBy(dataset.tags, "key");
 
+    /*
     dataset.nodes.forEach((node) =>
       graph.addNode(node.key, {
         ...node,
         ...omit(clusters[node.cluster], "key"),
         image: `${process.env.PUBLIC_URL}/images/${tags[node.tag].image}`,
       }),
+    );*/
+
+    // Each Unknown Node (State = -1)
+    dataset.nodes.forEach((node) => {
+      if (node.state !== -1) {
+        graph.addNode(node.key, {
+          ...node,
+          ...omit(clusters[node.cluster], "key"),
+          image: `${process.env.PUBLIC_URL}/images/${tags[node.tag].image}`,
+        })
+      }      
+      else {
+        graph.addNode(node.key, {
+          ...node,
+          ...omit(clusters[-1], "key"),
+          image: `${process.env.PUBLIC_URL}/images/${"unknown.svg"}`,
+        })}
+      }
     );
+
     dataset.edges.forEach(([source, target]) => graph.addEdge(source, target, { size: 1 }));
 
     // Use degrees as node sizes:

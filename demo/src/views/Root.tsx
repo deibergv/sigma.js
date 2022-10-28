@@ -9,7 +9,7 @@ import GraphEventsController from "./GraphEventsController";
 import GraphDataController from "./GraphDataController";
 import DescriptionPanel from "./DescriptionPanel";
 import { Dataset, FiltersState } from "../types";
-import ClustersPanel from "./ClustersPanel";
+//import ClustersPanel from "./ClustersPanel";
 import SearchField from "./SearchField";
 import drawLabel from "../canvas-utils";
 import GraphTitle from "./GraphTitle";
@@ -107,24 +107,6 @@ const Root: FC = () => {
               <div className="panels">
                 <SearchField filters={filtersState} />
                 <DescriptionPanel />
-                <ClustersPanel
-                  clusters={dataset.clusters}
-                  filters={filtersState}
-                  setClusters={(clusters) =>
-                    setFiltersState((filters) => ({
-                      ...filters,
-                      clusters,
-                    }))
-                  }
-                  toggleCluster={(cluster) => {
-                    setFiltersState((filters) => ({
-                      ...filters,
-                      clusters: filters.clusters[cluster]
-                        ? omit(filters.clusters, cluster)
-                        : { ...filters.clusters, [cluster]: true },
-                    }));
-                  }}
-                />
                 <TagsPanel
                   tags={dataset.tags}
                   filters={filtersState}
