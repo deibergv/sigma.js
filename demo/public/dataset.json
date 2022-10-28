@@ -41,7 +41,8 @@
       "cluster": "1",
       "x": -150.0,
       "y": -150.0,
-      "score": 0.8
+      "score": 0.8,
+      "state": -1
     },
     {
       "key": "Reinforcement-Learning",
@@ -94,7 +95,8 @@
       "cluster": "2",
       "x": -250.0,
       "y": 250.0,
-      "score": 0.6
+      "score": 0.6,
+      "state": -1
     },
     {
       "key": "Association",
@@ -104,7 +106,8 @@
       "cluster": "2",
       "x": -250.0,
       "y": 50.0,
-      "score": 0.6
+      "score": 0.6,
+      "state": -1
     },
     {
       "key": "Clustering",
@@ -209,18 +212,18 @@
     {
       "key": "Logistic-Regression",
       "label": "Logistic Regression",
-      "tag": "Method",
+      "tag": "Concept",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
       "cluster": "3",
       "x": 180.0,
-      "y": 35.0,
+      "y": 15.0,
       "score": 0.4,
       "state": -1
     },
     {
       "key": "SVM",
       "label": "SVM",
-      "tag": "Method",
+      "tag": "Concept",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
       "cluster": "3",
       "x": 130.0,
@@ -231,13 +234,13 @@
     {
       "key": "Random-Forest-Classifier",
       "label": "Random Forest Classifier",
-      "tag": "Method",
+      "tag": "Concept",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
       "cluster": "3",
       "x": 135.0,
       "y": 10.0,
       "score": 0.4,
-      "state": -1
+      "state": 1
     },
 
 
@@ -250,11 +253,11 @@
 
 
     {
-      "key": "test",
-      "label": "test",
-      "tag": "Method",
+      "key": "invisible",
+      "label": "",
+      "tag": "invisible",
       "URL": "https://en.wikipedia.org/wiki/Machine-learning",
-      "cluster": "3",
+      "cluster": "99",
       "x": 350.0,
       "y": 350.0,
       "score": 0,
@@ -300,7 +303,7 @@
 
   ],
   "clusters": [
-    { "key": "-1", "color": "#bbb", "clusterLabel": "Null" },
+    { "key": "-1", "color": "#bbb", "clusterLabel": "" },
     { "key": "0", "color": "#6c3e81", "clusterLabel": "Graph theory" },
     { "key": "1", "color": "#5f83cc", "clusterLabel": "Spreadsheets" },
     { "key": "2", "color": "#57a835", "clusterLabel": "Test" },
@@ -325,7 +328,9 @@
     { "key": "22", "color": "#666666", "clusterLabel": "Clinical terms and technologies" },
     { "key": "23", "color": "#cf7435", "clusterLabel": "Network Science" },
     { "key": "24", "color": "#666666", "clusterLabel": "Tensors (mathematics)" },
-    { "key": "25", "color": "#666666", "clusterLabel": "Knots" }
+    { "key": "25", "color": "#666666", "clusterLabel": "Knots" },
+
+    { "key": "99", "color": "#eee", "clusterLabel": "Invisible" }
   ],
   "tags": [
     { "key": "unknown", "image": "unknown.svg" },
@@ -338,6 +343,8 @@
     { "key": "Organization", "image": "organization.svg" },
     { "key": "Person", "image": "person.svg" },
     { "key": "Technology", "image": "technology.svg" },
-    { "key": "Tool", "image": "tool.svg" }
+    { "key": "Tool", "image": "tool.svg" },
+
+    { "key": "invisible", "image": "" }
   ]
 }

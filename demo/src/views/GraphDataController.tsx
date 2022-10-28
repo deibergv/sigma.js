@@ -38,7 +38,9 @@ const GraphDataController: FC<{ dataset: Dataset; filters: FiltersState }> = ({ 
       else {
         graph.addNode(node.key, {
           ...node,
-          ...omit(clusters[-1], "key"),
+          ...omit(clusters[-1], "unknown"),
+          label: "unknown",
+          tag: "unknown",
           image: `${process.env.PUBLIC_URL}/images/${"unknown.svg"}`,
         })}
       }
